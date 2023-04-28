@@ -6,7 +6,7 @@ input.onkeyup = function() {
   newtext.textContent = textElement;
 };
 input.onkeyup();
-//Возврат текста в консоль
+
 document.querySelector('.btn').addEventListener('click', function() {
   let btn = textElement;
   console.log(btn);
@@ -14,7 +14,7 @@ document.querySelector('.btn').addEventListener('click', function() {
  document.querySelector('.btn').addEventListener('click', function(event) {
   input.value = event.preventDefault();
 });
-//Удаление текста из формы
+
 document.querySelector('.btn').addEventListener('click', function(event) {
   newtext.textContent = event.preventDefault();
 });
